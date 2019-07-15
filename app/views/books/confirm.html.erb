@@ -1,0 +1,10 @@
+<%= form_for @post do |f| %>
+  <%= @book.contents %>
+  <%= @post.day %>
+  <div class="actions">
+    <%= f.submit 'OK', name: 'back' %>
+  </div>
+  <div class="actions">
+    <%= f.submit 'キャンセル' %>
+  </div>
+<% end %

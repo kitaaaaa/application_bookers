@@ -1,0 +1,13 @@
+<h2>Editing Book</h2>
+<%= form_for(@book) do |f| %>
+<p>Title</p>
+<%= f.text_field :title %>
+<p>Body</p>
+<%= f.text_area :body %>
+<br>
+<%= f.submit 'Update Book' %>
+<br>
+<a><%= link_to 'show', book_path(@book.id) %>
+	|
+	<%= link_to 'Back', books_path %></a>
+<% end %>
